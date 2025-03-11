@@ -49,7 +49,7 @@ body {
 
 @media (max-width: 768px) {
   .header {
-    padding: 10px 250px;
+    padding: 10px 213px;
     margin-left: 0px;
   }
 
@@ -115,8 +115,10 @@ nav a {
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
   .hero {
-    height: auto;
-    padding: 60px 20px;
+  
+    padding: 60px 400px;
+
+
   }
 
   .hero h1 {
@@ -141,16 +143,16 @@ nav a {
 /* Hamburger Menu for Mobile */
 @media (max-width: 768px) {
   .menu-icon {
-    display: block;
+    display: flex;
   }
   
 
   .nav-links {
     display: none;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     top: 60px;
-    right: 200px;
+    right: 100px;
     background: #fff;
     padding: 100px;
     border-radius: 5px;
@@ -158,7 +160,7 @@ nav a {
   }
 
   .nav-links.active {
-    display: flex;
+    display: grid;
   }
 }
 
@@ -195,7 +197,6 @@ nav .dnt {
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
   justify-content: center;
   color: #fff;
   text-align: center;
