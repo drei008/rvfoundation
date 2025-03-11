@@ -15,8 +15,8 @@ body {
   position: relative;
   background: #1b4332;
   color: #fff;
-  border-radius: 0 0 20px 20px; /* Round the corners */
-  margin: 0px 200px; /* Add space around the header */
+  border-radius: 0 0 20px 20px;
+  margin: 0px 200px;
   text-align: center;
   padding: 10px 20px;
   text-align: center;
@@ -44,7 +44,7 @@ body {
 }
 
 .header .volunteer a:hover {
-  transform: scale(1.05); /* Slightly enlarge on hover */
+  transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
@@ -62,14 +62,14 @@ body {
 
 
 .logo {
-  position: absolute; /* Makes it float above */
-  top: -30px; /* Moves it slightly upwards for overlap */
-  left: 100px; /* Adjust left positioning */
-  z-index: 1100; /* Ensures it stays above header and nav */
+  position: absolute;
+  top: -30px;
+  left: 100px;
+  z-index: 1100; 
 }
 
 .logo img {
-  height: 80px; /* Adjust size as needed */
+  height: 80px;
   width: auto;
 }
 
@@ -112,26 +112,29 @@ nav a {
   font-weight: bold;
 }
 
-/* Responsive Design for Mobile */
 @media (max-width: 768px) {
   .hero {
   
-    padding: 60px 400px;
+    padding: 50px 0px;
 
 
   }
 
   .hero h1 {
     font-size: 2rem;
+  
+
   }
 
   .hero p {
     font-size: 1.2rem;
+
   }
 
   .cta {
     flex-direction: column;
     gap: 10px;
+    padding: 0 100px;
   }
 
   .cta .btn {
@@ -140,7 +143,6 @@ nav a {
   }
 }
 
-/* Hamburger Menu for Mobile */
 @media (max-width: 768px) {
   .menu-icon {
     display: flex;
@@ -171,7 +173,7 @@ nav a:hover {
 nav .dnt {
 
     position: absolute;
-    right: 100px; /* Adjust as needed */
+    right: 100px;
     top: 50%;
     transform: translateY(-50%);
     background: #2d6a4f;
@@ -179,7 +181,7 @@ nav .dnt {
     
 }
 .dnt {
-  background-color: #f39c12; /* Default color */
+  background-color: #f39c12;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -188,11 +190,10 @@ nav .dnt {
 
 .dnt:hover {
   background: linear-gradient(135deg, #d8f3dc, #b7e4c7);
-  transition: background-color 0.3s ease-in-out; /* Smooth transition */
+  transition: background-color 0.3s ease-in-out;
 }
 
 
-/* Hero Section */
 .hero {
   height: 100vh;
   display: flex;
@@ -232,7 +233,6 @@ nav .dnt {
   opacity: 1;
 }
 
-/* Keep Hero Content Always Visible */
 .hero-content {
   position: relative;
   max-width: 800px;
@@ -241,8 +241,8 @@ nav .dnt {
   transform: translate(-50%, -50%);
   text-align: center;
   color: #ade8f4;
-  z-index: 10; /* Ensures it's always above the images */
-  background: rgba(9, 186, 217, 0.1); /* Optional: Adds contrast */
+  z-index: 10; 
+  background: rgba(9, 186, 217, 0.1); 
   padding: 20px;
   border-radius: 10px;
   margin: 0 auto;
@@ -254,7 +254,7 @@ nav .dnt {
 
 
 
-/* Slideshow Animation */
+
 @keyframes slideshow {
   0% { opacity: 0; transform: translateX(100%); }
   10% { opacity: 1; transform: translateX(0); }
@@ -263,7 +263,7 @@ nav .dnt {
   100% { opacity: 0; transform: translateX(100%); }
 }
 
-/* Slide Timing */
+
 .slide:nth-child(1) {
   animation-delay: 0s;
 }
@@ -307,16 +307,16 @@ nav .dnt {
   color: #000000;
 }
 
-/* Background Container */
+
 .background-container {
   background: url('https://github.com/drei008/rvfoundation/blob/main/background/world%20map.jpg?raw=true') no-repeat center center;
   background-size: cover;
   position: relative;
-  padding: 5px 0px; /* Add padding for spacing */
+  padding: 5px 0px;
 }
 
 
-/* ===== Statistics Section ===== */
+
 .stats {
   display: flex;
   justify-content: center;
@@ -326,7 +326,7 @@ nav .dnt {
   padding: 200px 20px;
   background-size: cover;
   position: relative;
-  margin-top: -100px; /* Remove top margin */
+  margin-top: -100px;
   margin-bottom: -10%;
   
 }
@@ -343,15 +343,15 @@ nav .dnt {
 }
 
 .stats-section {
-  background: #45a049; /* Orange background */
+  background: #45a049;
   color: white;
-  padding: 40px 20%; /* Adjust padding as needed */
+  padding: 40px 20%; 
   border-radius: 10px;
   text-align: center;
   width: 80%;
-  margin: 0 auto; /* Center the section */
-  position: relative; /* Change from absolute to relative */
-  z-index: 1000; /* Ensure it stays above other elements */
+  margin: 0 auto;
+  position: relative; 
+  z-index: 1000; 
 }
 
 
@@ -362,7 +362,7 @@ nav .dnt {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.0); /* Dark overlay for better text visibility */
+  background: rgba(0, 0, 0, 0.0);
   z-index: 1;
 }
 
@@ -398,16 +398,16 @@ nav .dnt {
 }
 
 
-/* Popular Causes Section */
+
 .popular-causes {
   text-align: center;
   padding: 50px 20px;
-  background: rgba(0, 0, 0, 0.0); /* Light background for contrast */
+  background: rgba(0, 0, 0, 0.0); 
 }
 
 .causes-logo img {
-  width: 100px; /* Increase logo size */
-  height: auto; /* Maintain aspect ratio */
+  width: 100px; 
+  height: auto; 
   margin-bottom: 20px;
 }
 
@@ -423,33 +423,33 @@ nav .dnt {
 
 .popular-causes small {
   font-size: 0.9rem;
-  color: #666; /* Dark gray for better readability */
+  color: #666; 
 }
 
-/* School Section */
+
 .school {
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
   padding: 50px 20px;
-  background: rgba(0, 0, 0, 0.0); /* White background for contrast */
+  background: rgba(0, 0, 0, 0.0); 
 }
 
 .school-box {
   text-align: center;
   max-width: 500px;
   width: 100%;
-  background: #f9f9f9; /* Light background for each box */
+  background: #f9f9f9; 
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .school-box img {
-  width: 100%; /* Make images fill the container */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 10px; /* Rounded corners */
+  width: 100%; 
+  height: auto;
+  border-radius: 10px;
   margin-bottom: 20px;
 }
 
@@ -464,7 +464,7 @@ nav .dnt {
 }
 
 
-/* Donation Counter Section */
+
 .donation-counter {
   background-color: #1b4332;
   background-size: cover;
@@ -485,14 +485,14 @@ nav .dnt {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
 .counter-box {
   position: relative;
   z-index: 2;
-  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  background: rgba(255, 255, 255, 0.8);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -503,20 +503,20 @@ nav .dnt {
 .counter-box h2 {
   font-size: 2rem;
   margin-bottom: 10px;
-  color: #333; /* Dark text for contrast */
+  color: #333; 
 }
 
 .counter-box p {
   font-size: 2.5rem;
   font-weight: bold;
   margin: 0;
-  color: #1b4332; /* Green color for the amount */
+  color: #1b4332;
 }
 
 .school-box .spnr {
 
   position: relative;
-  right: 0px; /* Adjust as needed */
+  right: 0px; 
   top: 5%;
   transform: translateY(-50%);
   border-radius: 10px;
@@ -530,13 +530,13 @@ padding: 10px 0px;
 
 .spn:hover {
   background: linear-gradient(135deg, #d8f3dc, #b7e4c7);
-  transition: background-color 0.3s ease-in-out; /* Smooth transition */
+  transition: background-color 0.3s ease-in-out; 
   color: #000000;
 }
 
 .spn {
-  background: #1b4332; /* Green background */
-  color: #fff; /* White text */
+  background: #1b4332; 
+  color: #fff;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
@@ -544,18 +544,18 @@ padding: 10px 0px;
   transition: background 0.3s ease;
 }
 
-/* Footer Section */
+
 footer {
-  background: #333; /* Dark background */
-  color: #fff; /* White text */
+  background: #333;
+  color: #fff;
   text-align: center;
   padding: 20px;
-  position: relative; /* Ensure footer is positioned correctly */
-  z-index: 10; /* Ensure footer is above other elements */
+  position: relative;
+  z-index: 10;
 }
 
 footer a {
-  color: #4CAF50; /* Green color for links */
+  color: #4CAF50;
   text-decoration: none;
 }
 
@@ -563,7 +563,6 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/*about us*/
 .about-header {
   position: relative;
   width: 100%;
@@ -573,14 +572,14 @@ footer a:hover {
 .about-banner {
   position: relative;
   width: 100%;
-  height: 500px; /* Adjust height as needed */
+  height: 500px;
 }
 
 .about-banner img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: grayscale(100%); /* Black and white effect */
+  filter: grayscale(100%);
 }
 
 .overlay {
@@ -627,7 +626,7 @@ footer a:hover {
   align-items: center;
 }
 
-/* Left Side - Image with Brush Effect */
+
 .about-image {
   position: relative;
   width: 400px;
@@ -659,7 +658,7 @@ footer a:hover {
   text-align: center;
 }
 
-/* Right Side - Content */
+
 .about-title {
   display: flex;
   align-items: center;
@@ -678,7 +677,6 @@ footer a:hover {
   margin-bottom: 15px;
 }
 
-/* Tabs */
 .about-tabs {
   display: flex;
   gap: 10px;
@@ -701,7 +699,6 @@ footer a:hover {
   border: 1px solid #0a2c77;
 }
 
-/* Bullet Points */
 .about-list {
   list-style: none;
   padding: 0;
@@ -712,7 +709,6 @@ footer a:hover {
   margin-bottom: 8px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .about-container {
         flex-direction: column;
@@ -728,7 +724,7 @@ footer a:hover {
 .about-vlnt {
   position: relative;
   z-index: 1;
-  height: 500px; /* Adjust height based on background */
+  height: 500px; 
   background-size: cover;
   background-position: center;
 }
@@ -736,14 +732,14 @@ footer a:hover {
 .about-vlnts {
   position: relative;
   width: 100%;
-  height: 600px; /* Adjust height as needed */
+  height: 600px;
 }
 
 .about-vlnts img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 1000; /* Ensures nav stays above other elements */
+  z-index: 1000;
 }
 
 
@@ -770,13 +766,12 @@ footer a:hover {
     font-style: italic;
 }
 
-/* Heading */
+
 .stats-content h2 {
     font-size: 36px;
     font-weight: bold;
 }
 
-/* Contact Button */
 .contact-btn {
     background: transparent;
     border: 2px solid white;
@@ -793,7 +788,6 @@ footer a:hover {
     color: #000000;
 }
 
-/* Statistics Grid */
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
