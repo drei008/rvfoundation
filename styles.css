@@ -99,11 +99,38 @@ nav a {
   font-weight: bold;
 }
 
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .cta {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cta .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 /* Hamburger Menu for Mobile */
 @media (max-width: 768px) {
   .menu-icon {
     display: block;
   }
+  
 
   .nav-links {
     display: none;
@@ -156,10 +183,13 @@ nav .dnt {
   display: flex;
   align-items: center;
   justify-content: center;
+  justify-content: center;
   color: #fff;
   text-align: center;
   position: relative;
   overflow: hidden;
+  background-size: cover;
+  padding: 20ox;
   
 }
 
@@ -190,9 +220,10 @@ nav .dnt {
 
 /* Keep Hero Content Always Visible */
 .hero-content {
-  position: absolute;
+  position: relative;
+  max-width: 800px;
   top: 20%;
-  left: 20%;
+  left: 40%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: #ade8f4;
@@ -200,6 +231,7 @@ nav .dnt {
   background: rgba(9, 186, 217, 0.1); /* Optional: Adds contrast */
   padding: 20px;
   border-radius: 10px;
+  margin: 0 auto;
 }
 
 .hero-content .cm {
@@ -228,26 +260,22 @@ nav .dnt {
   animation-delay: 8s;
 }
 
-/* Hero Content */
-.hero-content {
-  position: relative;
-  z-index: 2;
-}
-
 .hero h1 {
   font-family: 'poppins', sans-serif;
   font-size: 3rem;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .hero p {
   font-size: 1.5rem;
-  margin-bottom: 20px;
-  font-family: Arial, Helvetica, sans-serif
+  margin-bottom: 30px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.hero .cta {
-  margin-top: 20px;
+.cta {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .hero .btn {
@@ -256,8 +284,8 @@ nav .dnt {
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
-  margin: 0 10px;
   font-weight: bold;
+  transition: background 0.3s ease;
 }
 
 .hero .btn:hover {
@@ -827,5 +855,6 @@ footer a:hover {
   transform: scale(1.05); 
   color: black;
 }
+
 
 
