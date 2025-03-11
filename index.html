@@ -28,11 +28,13 @@
     </div>
   </header>
 
-  <!-- Navigation -->
-  <nav>
-    <div class="logo">
-      <img src="https://github.com/drei008/rvfoundation/blob/main/logo/foundationlogo1.png?raw=true" alt="Foundation Logo" width="120">
+<!-- Navigation -->
+<nav>
+  <div class="logo">
+    <img src="https://github.com/drei008/rvfoundation/blob/main/logo/foundationlogo1.png?raw=true" alt="Foundation Logo" width="120">
   </div>
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  <div class="nav-links">
     <a href="index.html">Home</a>
     <a href="about.html">About Us</a>
     <a href="programs.html">Programs</a>
@@ -40,9 +42,10 @@
     <a href="contact.html">Contact</a>
     <a href="gallery.html">Gallery</a>
     <div class="dnt">
-      <a href="donate.html" class="btns">Donate Now</a></div>
-    
-  </nav>
+      <a href="donate.html" class="btn">Donate Now</a>
+    </div>
+  </div>
+</nav>
 
   <!-- Hero Section -->
   <section id="home" class="hero">
@@ -162,6 +165,13 @@
 
     // Update the counter every 3 seconds (for demonstration)
     setInterval(updateDonationCounter, 3000);
-  </script>
+
+
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+  }
+</script>
+
 </body>
 </html>
