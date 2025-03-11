@@ -28,21 +28,28 @@
     </div>
   </header>
 
-  <!-- Navigation -->
-  <nav>
-    <div class="logo">
-      <img src="https://github.com/drei008/rvfoundation/blob/main/logo/foundationlogo1.png?raw=true" alt="Foundation Logo" width="120">
-  </div>
+<!-- Navigation -->
+<nav>
+
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  <div class="nav-links">
     <a href="index.html">Home</a>
     <a href="about.html">About Us</a>
     <a href="programs.html">Programs</a>
     <a href="get-involved.html">Get Involved</a>
     <a href="contact.html">Contact</a>
     <a href="gallery.html">Gallery</a>
-    <div class="dnt">
-      <a href="donate.html" class="btns">Donate Now</a></div>
-    
-  </nav>
+  </div>  <div class="dnt">
+      <a href="donate.html" class="btn">Donate Now</a>
+    </div>
+  </div>
+</nav>
+<script>
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+  }
+  </script>
 
   <!-- Get Involved Section -->
   <div class="container">

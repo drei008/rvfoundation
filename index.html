@@ -30,9 +30,7 @@
 
 <!-- Navigation -->
 <nav>
-  <div class="logo">
-    <img src="https://github.com/drei008/rvfoundation/blob/main/logo/foundationlogo1.png?raw=true" alt="Foundation Logo" width="120">
-  </div>
+
   <div class="menu-icon" onclick="toggleMenu()">☰</div>
   <div class="nav-links">
     <a href="index.html">Home</a>
@@ -46,6 +44,12 @@
     </div>
   </div>
 </nav>
+<script>
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+  }
+  </script>
 
   <!-- Hero Section -->
   <section id="home" class="hero">
@@ -167,10 +171,6 @@
     setInterval(updateDonationCounter, 3000);
 
 
-  function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('active');
-  }
 </script>
 
 </body>

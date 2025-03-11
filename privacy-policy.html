@@ -3,25 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy - Your Foundation</title>
+  <title>Your Foundation - Home</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <!-- Header -->
-  <header>
-    <h1>Your Foundation</h1>
-    <p>Making a difference, one step at a time.</p>
+  <header class="header">
+    <div class="header-content">
+      <div style="display: flex; align-items: center; gap: 5px;">
+        <img src="https://github.com/drei008/rvfoundation/blob/main/logo/email.png?raw=true" alt="Email Icon" width="20" height="20">
+        <strong>Email:</strong> R&VMOCELLO@FOUNDATION.COM
+    </span>
+    </div>
+      <span class="volunteer">
+        <div style="display: flex; align-items: center; gap: 5px;">
+          <img src="https://github.com/drei008/rvfoundation/blob/main/logo/volunteer.png?raw=true" alt="Email Icon" width="20" height="20">
+        <a href="get-involved.html"> Volunteer Now </a>
+      </span>
+    </div>
   </header>
 
-  <!-- Navigation -->
-  <nav>
+<!-- Navigation -->
+<nav>
+
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  <div class="nav-links">
     <a href="index.html">Home</a>
     <a href="about.html">About Us</a>
     <a href="programs.html">Programs</a>
     <a href="get-involved.html">Get Involved</a>
     <a href="contact.html">Contact</a>
     <a href="gallery.html">Gallery</a>
-  </nav>
+  </div>  <div class="dnt">
+      <a href="donate.html" class="btn">Donate Now</a>
+    </div>
+  </div>
+</nav>
+<script>
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+  }
+  </script>
 
   <!-- Privacy Policy Section -->
   <div class="container">
