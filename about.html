@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Foundation - Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <div style="display: flex; align-items: center; gap: 5px;">
+        <img src="https://github.com/drei008/rvfoundation/blob/main/logo/email.png?raw=true" alt="Email Icon" width="20" height="20">
+        <strong>Email:</strong> R&VMOCELLO@FOUNDATION.COM
+    </span>
+    </div>
+      <span class="volunteer">
+        <div style="display: flex; align-items: center; gap: 5px;">
+          <img src="https://github.com/drei008/rvfoundation/blob/main/logo/volunteer.png?raw=true" alt="Email Icon" width="20" height="20">
+        <a href="get-involved.html"> Volunteer Now </a>
+      </span>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">
+      <img src="https://github.com/drei008/rvfoundation/blob/main/logo/foundationlogo1.png?raw=true" alt="Foundation Logo" width="120">
+  </div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="programs.html">Programs</a>
+    <a href="get-involved.html">Get Involved</a>
+    <a href="contact.html">Contact</a>
+    <a href="gallery.html">Gallery</a>
+    <div class="dnt">
+      <a href="donate.html" class="btn">Donate Now</a></div>
+    
+  </nav>
+
+  <section class="about-header">
+    <div class="about-banner">
+        <img src="https://github.com/drei008/rvfoundation/blob/main/background/background3.jpg?raw=true" alt="Children Playing">
+        <div class="overlay">
+            <div class="brush-effect">
+                <h1>About Us</h1>
+                <a href="index.html" class="home"><p>Home</a> &gt; About Us</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-section">
+  <div class="about-container">
+      <div class="about-image">
+          <img src="https://github.com/drei008/rvfoundation/blob/main/background/background2.jpg?raw=true" alt="meet the team">
+          <div class="experience-box">
+              <p>Meet our team<br> in charity fund</p>
+          </div>
+      </div>
+
+      <!-- Right Side - Content -->
+      <div class="conte-section">
+          <div class="about-content">
+              <div class="about-title">
+                  <img src="https://github.com/drei008/rvfoundation/blob/main/logo/about us.png?raw=true" alt="About Icon">
+                  <span>About Us</span>
+              </div>
+          </div>
+
+          <div class="content-container">
+              <div id="about" class="content-section active">
+                  <h2>About Us</h2>
+                  <p>Welcome to [Foundation Name], a [501(c)(3) or registered charity] organization dedicated to [briefly describe the foundation's mission and purpose]. Our team is passionate about [specific area of focus, e.g., education, healthcare, or community development] and committed to making a meaningful difference in the lives of [target population or community].</p>
+              </div>
+              
+              <div id="mission" class="content-section">
+                  <h2>Mission</h2>
+                  <p>[Foundation Name] was established in [year] by [founder's name] with a vision to [briefly describe the inspiration or motivation behind the foundation]. Since our inception, we have [highlight notable achievements, milestones, or success stories].</p>
+              </div>
+              
+              <div id="vision" class="content-section">
+                  <h2>Vision</h2>
+                  <p>Welcome to [Foundation Name], a [501(c)(3) or registered charity] organization dedicated to [briefly describe the foundation's mission and purpose]. Our team is passionate about [specific area of focus, e.g., education, healthcare, or community development] and committed to making a meaningful difference in the lives of [target population or community].</p>
+              </div>
+          </div>
+          
+          <div class="buttons">
+              <button onclick="showSection('about')">About Us »</button>
+              <button onclick="showSection('mission')">Mission »</button>
+              <button onclick="showSection('vision')">Vision »</button>
+          </div>
+      </div>
+  </div>
+</section>
+
+<script>
+
+
+  function showSection(sectionId) {
+    document.querySelectorAll('.content-section').forEach(section => {
+        section.classList.remove('active');
+    });
+
+    document.getElementById(sectionId).classList.add('active');
+}
+  </script>
+
+
+<section class="about-vlnt">
+  <div class="about-vlnts">
+  <img src="https://github.com/drei008/rvfoundation/blob/main/background/background2.jpg?raw=true" class="vlnt">
+</div>
+</section>
+
+<section class="stats-section">
+  <div class="stats-container">
+      <div class="stats-content">
+          <!-- Title -->
+          <h3 class="stats-title">
+              <img src="https://github.com/drei008/rvfoundation/blob/main/logo/volunteer.png?raw=true" alt="Heart Icon">
+              <span><i>Global Shield Foundations</i></span>
+          </h3>
+          <h2>Highest Ambition is to Help People</h2>
+
+          <!-- Contact Button -->
+          <a href="contact.html"><button class="contact-btn">Contact Us »</button></a>
+      </div>
+
+      <!-- Statistics -->
+      <div class="stats-grid">
+          <div class="stats-box">
+              <img src="https://github.com/drei008/rvfoundation/blob/main/logo/montly donors.png?raw=true" alt="Growth Icon">
+              <h3>12+</h3>
+              <p>Years of Foundation</p>
+          </div>
+          <div class="stats-box">
+              <img src="https://github.com/drei008/rvfoundation/blob/main/logo/years of foundation.png" alt="Donate Icon">
+              <h3>6k+</h3>
+              <p>Monthly Donation</p>
+          </div>
+          <div class="stats-box">
+              <img src="https://github.com/drei008/rvfoundation/blob/main/logo/volunteer.png" alt="Partners Icon">
+              <h3>3k+</h3>
+              <p>Global Partners</p>
+          </div>
+          <div class="stats-box">
+              <img src="https://github.com/drei008/rvfoundation/blob/main/logo/projects completed.png" alt="Projects Icon">
+              <h3>83+</h3>
+              <p>Project Completed</p>
+          </div>
+      </div>
+  </div>
+  
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Your Foundation. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a></p>
+</footer>
+</body>
+</html>

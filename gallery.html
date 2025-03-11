@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Foundation - Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <div style="display: flex; align-items: center; gap: 5px;">
+        <img src="https://github.com/drei008/rvfoundation/blob/main/logo/email.png?raw=true" alt="Email Icon" width="20" height="20">
+        <strong>Email:</strong> R&VMOCELLO@FOUNDATION.COM
+    </span>
+    </div>
+      <span class="volunteer">
+        <div style="display: flex; align-items: center; gap: 5px;">
+          <img src="https://github.com/drei008/rvfoundation/blob/main/logo/volunteer.png?raw=true" alt="Email Icon" width="20" height="20">
+        <a href="get-involved.html"> Volunteer Now </a>
+      </span>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">
+      <img src="https://github.com/drei008/rvfoundation/blob/main/logo/foundationlogo1.png?raw=true" alt="Foundation Logo" width="120">
+  </div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="programs.html">Programs</a>
+    <a href="get-involved.html">Get Involved</a>
+    <a href="contact.html">Contact</a>
+    <a href="gallery.html">Gallery</a>
+    <div class="dnt">
+      <a href="donate.html" class="btns">Donate Now</a></div>
+    
+  </nav>
+
+  <!-- Gallery Section -->
+  <section class="gallery">
+    <h2>Our Gallery</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="image1.jpg" alt="Image 1">
+      </div>
+      <div class="gallery-item">
+        <img src="image2.jpg" alt="Image 2">
+      </div>
+      <div class="gallery-item">
+        <img src="image3.jpg" alt="Image 3">
+      </div>
+      <div class="gallery-item">
+        <img src="image4.jpg" alt="Image 4">
+      </div>
+      <div class="gallery-item">
+        <img src="image5.jpg" alt="Image 5">
+      </div>
+      <div class="gallery-item">
+        <img src="image6.jpg" alt="Image 6">
+      </div>
+    </div>
+         <!-- Donation Form -->
+         <form id="donation-form">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required>
+  
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+  
+          <label for="amount">Donation Amount ($):</label>
+          <input type="number" id="amount" name="amount" min="1" required>
+  
+          <!-- Payment Method -->
+          <label for="payment-method">Payment Method:</label>
+          <select id="payment-method" name="payment-method" required>
+            <option value="gcash">GCash</option>
+            <option value="card">Credit/Debit Card</option>
+          </select>
+  
+          <button type="submit" class="btn">Donate Now</button>
+        </form>
+  
+        <!-- Payment Status -->
+        <div id="payment-status" class="payment-status"></div>
+      </div>
+    </section>
+  
+  
+    <!-- PayMongo Integration Script -->
+    <script>
+      // Replace with your PayMongo public key
+      const paymongoPublicKey = 'pk_test_your_public_key_here';
+  
+      // Initialize PayMongo
+      const paymongo = Paymongo(paymongoPublicKey);
+  
+      // Handle form submission
+      document.getElementById('donation-form').addEventListener('submit', async (e) => {
+        e.preventDefault();
+  
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const amount = document.getElementById('amount').value * 100; // Convert to cents
+        const paymentMethod = document.getElementById('payment-method').value;
+  
+        try {
+          // Create a payment intent
+          const paymentIntent = await paymongo.paymentIntents.create({
+            amount: amount,
+            currency: 'PHP',
+            payment_method_allowed: [paymentMethod],
+            payment_method_options: {
+              card: { request_three_d_secure: 'any' },
+            },
+            description: `Donation from ${name} (${email})`,
+          });
+  
+          // Redirect to payment page
+          window.location.href = paymentIntent.attributes.next_action.redirect.url;
+        } catch (error) {
+          console.error('Payment error:', error);
+          document.getElementById('payment-status').innerHTML = `
+            <p class="error">Payment failed. Please try again.</p>
+          `;
+        }
+      });
+    </script>
+  </body>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Your Foundation. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a></p>
+  </footer>
+</body>
+</html>

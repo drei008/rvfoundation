@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Foundation - Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <div style="display: flex; align-items: center; gap: 5px;">
+        <img src="https://github.com/drei008/rvfoundation/blob/main/logo/email.png?raw=true" alt="Email Icon" width="20" height="20">
+        <strong>Email:</strong> R&VMOCELLO@FOUNDATION.COM
+    </span>
+    </div>
+      <span class="volunteer">
+        <div style="display: flex; align-items: center; gap: 5px;">
+          <img src="https://github.com/drei008/rvfoundation/blob/main/logo/volunteer.png?raw=true" alt="Email Icon" width="20" height="20">
+        <a href="get-involved.html"> Volunteer Now </a>
+      </span>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">
+      <img src="https://github.com/drei008/rvfoundation/blob/main/logo/foundationlogo1.png?raw=true" alt="Foundation Logo" width="120">
+  </div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="programs.html">Programs</a>
+    <a href="get-involved.html">Get Involved</a>
+    <a href="contact.html">Contact</a>
+    <a href="gallery.html">Gallery</a>
+    <div class="dnt">
+      <a href="donate.html" class="btns">Donate Now</a></div>
+    
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="slideshow">
+      <div class="slide" style="background-image: url('https://github.com/drei008/rvfoundation/blob/main/background/background.jpg?raw=true');"></div>
+      <div class="slide" style="background-image: url('https://github.com/drei008/rvfoundation/blob/main/background/background2.jpg?raw=true');"></div>
+      <div class="slide" style="background-image: url('https://github.com/drei008/rvfoundation/blob/main/background/background3.jpg?raw=true');"></div>
+    </div>
+    <div class="hero-content">
+      <h1 class="cn">R&V MOCELLO FOUNDATION</h1>
+      <p class="cm">Helping little hands reach big dreams.</p>
+      <div class="cta">
+        <a href="donate.html" class="btn">Donate Now</a>
+        <a href="get-involved.html" class="btn">Volunteer Now</a>
+      </div>
+    </div>
+  </section>
+<!-- Background Container -->
+<div class="background-container">
+    <!-- Statistics Section -->
+    <section class="stats">
+      
+      <div class="stat-box">
+          <h2>3k+</h2>
+          <p>Global Partners</p>
+          <img src="https://github.com/drei008/rvfoundation/blob/main/logo/global%20partners.png?raw=true" alt="Global Partners Icon">
+      </div>
+      <div class="stat-box">
+          <h2>83+</h2>
+          <p>Projects Completed</p>
+          <img src="https://github.com/drei008/rvfoundation/blob/main/logo/projects%20completed.png?raw=true" alt="Project Complete Icon">
+      </div>
+      <div class="stat-box">
+          <h2>6k+</h2>
+          <p>Monthly Donors</p>
+          <img src="https://github.com/drei008/rvfoundation/blob/main/logo/montly%20donors.png?raw=true" alt="Monthly Donate Icon">
+      </div>
+      <div class="stat-box">
+          <h2>12+</h2>
+          <p>Years of Foundation</p>
+          <img src="https://github.com/drei008/rvfoundation/blob/main/logo/years%20of%20foundation.png?raw=true" alt="Foundation Years Icon">
+      </div>
+    </section>
+  
+    <!-- Popular Causes Section -->
+    <section class="popular-causes">
+      <div class="causes-logo">
+        <img src="https://github.com/drei008/rvfoundation/blob/main/logo/foundationlogo1.png?raw=true" alt="Foundation Logo">
+      </div>
+      <h2><i>Popular Causes</i></h2>
+      <h1><strong>Help the children</strong></h1>
+    </section>
+    
+    <div class="school">
+      <div class="school-box">
+        <h2>Sponsor a child to school</h2>
+        <img src="https://github.com/drei008/rvfoundation/blob/main/background/sponsorchild.jpeg?raw=true" alt="Sponsor a child">
+        <div class="spnr">
+          <a href="donate.html" class="spn">Sponsor now</a>
+        </div>
+      </div>
+      <div class="school-box">
+        <h2>Sponsor school supplies</h2>
+        <img src="https://github.com/drei008/rvfoundation/blob/main/background/schoolsupplies.jpeg?raw=true" alt="School supplies">
+        <div class="spnr">
+          <a href="donate.html" class="spn">Sponsor Now</a>
+        </div>
+      </div>
+    </div>
+
+    
+
+  <!-- Donation Counter Section -->
+  <section class="donation-counter">
+    <div class="counter-box">
+      <h2>Total Donations</h2>
+      <p id="donation-amount">$0</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Your Foundation. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a></p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Slideshow Animation
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.style.opacity = i === index ? 1 : 0;
+      });
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    // Change slide every 5 seconds
+    setInterval(nextSlide, 5000);
+
+    // Donation Counter Simulation
+    let donationAmount = 0;
+
+    function updateDonationCounter() {
+      // Simulate a random donation between $10 and $100
+      const randomDonation = Math.floor(Math.random() * 91) + 10;
+      donationAmount += randomDonation;
+
+      // Update the donation amount on the page
+      document.getElementById('donation-amount').textContent = `$${donationAmount}`;
+    }
+
+    // Update the counter every 3 seconds (for demonstration)
+    setInterval(updateDonationCounter, 3000);
+  </script>
+</body>
+</html>
