@@ -245,6 +245,19 @@ nav .dnt {
   margin-bottom: -10%;
 }
 
+.stats-section {
+  background: #45a049; /* Orange background */
+  color: white;
+  padding: 10px 10%; /* Adjust padding as needed */
+  border-radius: 10px;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto; /* Center the section */
+  position: relative; /* Change from absolute to relative */
+  z-index: 1000; /* Ensure it stays above other elements */
+}
+
+
 .stats::before {
   content: "";
   position: absolute;
@@ -434,16 +447,18 @@ padding: 10px 0px;
   transition: background 0.3s ease;
 }
 
-/* Footer */
+/* Footer Section */
 footer {
-  background: #333;
-  color: #fff;
+  background: #333; /* Dark background */
+  color: #fff; /* White text */
   text-align: center;
   padding: 20px 0;
+  position: relative; /* Ensure footer is positioned correctly */
+  z-index: 10; /* Ensure footer is above other elements */
 }
 
 footer a {
-  color: #4CAF50;
+  color: #4CAF50; /* Green color for links */
   text-decoration: none;
 }
 
@@ -630,17 +645,6 @@ footer a:hover {
   z-index: 1000; /* Ensures nav stays above other elements */
 }
 
-  .stats-section {
-    background: #45a049; /* Orange background */
-    color: white;
-    padding:10px 10%;
-    border-radius: 10px;
-    text-align: center;
-    width: 80%;
-    margin-left: 200px;
-    position: absolute; /* Allows nav to overlap the header */
-    z-index: 1000; /* Ensures nav stays above other elements */
-}
 
 .stats-container {
     display: flex;
