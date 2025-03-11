@@ -553,7 +553,7 @@ footer a:hover {
   bottom: -20px;
   left: 50%;
   transform: translateX(-50%);
-  background: #0a2c77;
+  background: #344e41;
   color: white;
   padding: 10px 20px;
   border-radius: 8px;
@@ -689,7 +689,7 @@ footer a:hover {
 
 .contact-btn:hover {
     background: white;
-    color: #E6542E;
+    color: #000000;
 }
 
 /* Statistics Grid */
@@ -759,7 +759,7 @@ footer a:hover {
 }
 
 .buttons button {
-  background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient color */
+  background: linear-gradient(135deg, #3a5a40, #a3b18a); /* Gradient color */
   color: white;
   border: none;
   padding: 12px 20px;
@@ -771,8 +771,9 @@ footer a:hover {
 }
 
 .buttons button:hover {
-  background: linear-gradient(135deg, #feb47b, #ff7e5f);
+  background: linear-gradient(135deg, #caf0f8, #023e8a);
   transform: scale(1.05); /* Slight scale effect */
+  color: black;
 }
 
 
